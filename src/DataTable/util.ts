@@ -63,6 +63,8 @@ export function getProperty<T>(
 	format: Format<T> | undefined | null,
 	rowIndex: number,
 ): React.ReactNode {
+	console.log("selector");
+	console.log(selector);
 	if (!selector) {
 		return null;
 	}
